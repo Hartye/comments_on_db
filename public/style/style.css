@@ -1,0 +1,91 @@
+/* Global */
+body {
+    background: #ffffff;
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.copy {
+    opacity: 0.6;
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Buttons */
+button {
+    padding: .6rem 2rem;
+    font-size: 18px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: .2s;
+    background: rgb(105, 235, 105);
+}
+
+.delete-button {
+    padding: .4rem 2rem;
+    margin: .1rem 0;
+}
+
+.delete-button:hover {
+    transition: .2s;
+    background: rgb(247, 65, 65);
+}
+
+/* Add comment */
+.add-new-comment {
+    display: inline;
+}
+
+#myInput {
+    padding: .5rem 1rem .5rem;
+    font-size: 18px;
+    border: 2px #ddd solid;
+    width: calc(100% - 9.5rem);
+    margin: 1rem 0;
+}
+
+/* Comment Section */
+#myComment {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#myComment li {
+    width: calc(100% - .2rem);
+    display: flex;
+    margin: .2rem .2rem .2rem 0;
+    padding: .5rem .5rem;
+    border: 2px #ddd solid;
+    cursor: pointer;
+}
+
+#myComment li:hover {
+    transition: .2s;
+    background: #f0efef;
+}
+
+/* Responsive */
+@media (min-width: 800px) {
+    main {
+        margin: auto;
+        width: 40vw;
+    }
+}
